@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contacto</title>
+	<link rel="shortcut icon" href="../recursos/favicon2.png">
+	<link rel="stylesheet" href="../css/estilos.css">
+	<link href="https://fonts.googleapis.com/css2?family=Barlow&family=Montserrat:wght@300&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div class="header__logo">
+			<img src="../recursos/logo-naranja.jpg"  alt="logo" class="header__logo__imagen">
+		</div>
+		<nav>
+			<ul>
+				<li><a href="../index.html">Inicio</a></li>
+				<li><a href="./discografia.html">Discografia</a></li>
+				<li><a href="./merch.html">Merch</a></li>
+				<li><a href="./tour.html">Love on tour</a></li>
+				<li><a href="./contacto.html">Contacto</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section>
+			<div class="contacto__texto">
+				<h2 class="main__cancion__titulo">
+					Contacto
+				</h2>
+			<div class="cuadro">	
+				<p class="main__biografia__p">
+					Nos interesa conocerte, saber tù opinion que es lo que te gustaria, contenido que desees ver o cambios que harias
+				</p>	
+			<form method="GET" class="main__contacto">
+				<div class="main__contacto__formulario">
+					<label for="nombre_apellido" class="nombreyapellido">Nombre y Apellido</label>
+					<input type="text" placeholder="Tu nombre" id="nombre_apellido">
+					<select>
+						<option disabled selected>Selecciona tu genero</option>
+						<option>Hombre</option>
+						<option>Mujer</option>
+						<option>No binario</option>
+					</select>
+					<label for="email_contacto">Email</label>
+					<input type="email"  placeholder="Tu mail de contacto" id="email_contacto">
+					<div class="main__contacto__formulario__opciones">
+						<p>
+							¿Como conociste a Harry?
+						</p>
+						<div>
+							<input type="checkbox" name="conocer" value="radio">
+							<label for="radio">Radio</label>
+						</div>
+						<div>
+							<input type="checkbox" name="conocer" value="redes_sociales">
+							<label for="redes_sociales">Redes Sociales</label>
+						</div>
+						<div>
+							<input type="checkbox" name="conocer" value="amigos">
+							<label for="amigos">Recomendado por un amigo</label>
+						</div>
+						<div>
+							<input type="checkbox" name="conocer" value="spotify">
+							<label for="spotify">Spotify</label>
+						</div>
+						<div>
+							<input type="checkbox" name="conocer" value="yooutube">
+							<label for="yooutube">YouTube</label>
+						</div>
+						<div>
+							<input type="checkbox" name="conocer" value="otro">
+							<label for="otro">Otro</label>
+						</div>
+					</div>
+				</div>
+				<div class="main__contacto__textarea">
+					<label for="sugerencias">Tu Mensaje:</label>
+					<textarea placeholder="Cualquier sugenrencia o mensaje que quieras dejar" rows="13" cols="60"></textarea>
+				</div>
+			</form>
+				<div class="botonenviar">
+					<input type="submit" class="main__botonentradas">
+				</div>
+			</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+        <div class="footer__derechos">
+            <h3> Todos los derechos reservados ©</h3>
+            <h3>Alexis Delgado</h3>
+        </div>
+        <div class="footer__redes">
+            Segui a Harry en sus redes
+            <ul>
+                <li><a href="https://www.youtube.com/channel/UCZFWPqqPkFlNwIxcpsLOwew" target="_blank"><img src="../recursos/youtube-icon.png" alt="youtube"></a></li>
+                <li><a href="https://www.instagram.com/harrystyles/" target="_blank"><img src="../recursos/instagram-icon.png" alt="instagram"></a></li>
+                <li><a href="https://www.facebook.com/harrystyles" target="_blank"><img src="../recursos/facebook-icon.png" alt="facebook"></a></li>
+                <li><a href="https://open.spotify.com/artist/6KImCVD70vtIoJWnq6nGn3?si=rIypjOlwThqFIHJb1CXmqg" target="_blank"><img src="../recursos/spotify-icon.png" alt="spotify"></a></li>
+                <li><a href="https://twitter.com/Harry_Styles" target="_blank"><img src="../recursos/twitter-icon.png" alt="twitter"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
