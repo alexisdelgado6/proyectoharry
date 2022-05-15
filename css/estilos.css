@@ -483,6 +483,7 @@ option {
     font-size: 1.8rem;
 }
 
+
 @media (min-width: 320px) and (max-width: 540px){
     header {
         display: flex;
