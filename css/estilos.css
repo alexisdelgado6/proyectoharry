@@ -281,6 +281,7 @@ footer div ul li a img {
     border-radius: 15px;
     padding: 10px;
     font-weight: bolder;
+    margin: 5px;
 }
 
 .main__fechas li input {
