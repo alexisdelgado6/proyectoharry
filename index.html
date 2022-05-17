@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harry Styles</title>
     <link rel="shortcut icon" href="./recursos/favicon2.png" >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/estilos.css">
     <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Montserrat:wght@300&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -27,26 +28,46 @@
             </nav>
     </header>
     <main>
-        <section class="main__biografia">
-            <div class="main__biografia__imagenn">
-                <img src="./recursos/harry.jpg" alt="Harry Styles sonriendo" class="main__biografia__imagen">
+        <section class="main__biografia container">
+            <div class="row align-items-center"> 
+                <div id="carouselExampleControls" class="carousel slide col-xl-6 col-md-11 col-sm-11" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <img src="./recursos/harry.jpg" class="d-block w-100" alt="harry styles sonriendo">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="./recursos/harry2.jpg" class="d-block w-100" alt="harry styles 2022">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="./recursos/harry3.jpg" class="d-block w-100" alt="harry styles sin remera">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    </div>
+                <div class="main__biografia__texto col-xl-6 col-md-12 col-sm-10">
+                    <h1 class="animate__animated animate__bounce">Harry Styles</h1>
+                    <p class="main__biografia__p">
+                        Harry Styles es un cantante y compositor británico de música pop, ex miembro de la boy band One Direction , y el primer hombre que consigue ocupar en solitario la portada de Vogue USA . Harry Styles nació en Cheshire (Reino Unido) en 1994 y creció junto a su madre y su hermana después de que sus padres se divorciaran. En 2010 fue seleccionado para participar en la edición británica del programa Factor X . No ganó pero de aquel talent televisivo surgió el grupo One Direction formado, además de Styles, por Liam Payne, Zayn Malik, Niall Horan y Louis Tomlinson. Como miembro de One Direction publicó cinco álbumes, convirtiéndose en uno de los fenómenos fan más importantes del comienzo de los dosmiles. En 2016, tras la separación de la banda, Styles comenzó a trabajar en su disco de debut en solitario. En mayo de 2017 se publicó su trabajo homónimo que incluía su primer gran hit, Sign of the Times . Convertido en uno de los músicos más influyentes de Reino Unido, también debutó en el cine con la película Dunkerque de Christopher Nolan.
+                    </p>
+                </div>
             </div>
-            <div class="main__biografia__texto">
-                <h1 class="animate__animated animate__bounce">Harry Styles</h1>
-                <p class="main__biografia__p">
-                    Harry Styles es un cantante y compositor británico de música pop, ex miembro de la boy band One Direction , y el primer hombre que consigue ocupar en solitario la portada de Vogue USA . Harry Styles nació en Cheshire (Reino Unido) en 1994 y creció junto a su madre y su hermana después de que sus padres se divorciaran. En 2010 fue seleccionado para participar en la edición británica del programa Factor X . No ganó pero de aquel talent televisivo surgió el grupo One Direction formado, además de Styles, por Liam Payne, Zayn Malik, Niall Horan y Louis Tomlinson. Como miembro de One Direction publicó cinco álbumes, convirtiéndose en uno de los fenómenos fan más importantes del comienzo de los dosmiles. En 2016, tras la separación de la banda, Styles comenzó a trabajar en su disco de debut en solitario. En mayo de 2017 se publicó su trabajo homónimo que incluía su primer gran hit, Sign of the Times . Convertido en uno de los músicos más influyentes de Reino Unido, también debutó en el cine con la película Dunkerque de Christopher Nolan.
-                </p>
-            </div>
-        </section>
-        <section class="main__cancion">
-            <div class="main__cancion__prueba">
-                <h2 class="main__cancion__titulo">As it was</h2>
-                <h3 class="main__cancion__subtitulo">Nuevo single de su proximo disco</h3>
-                <h3 class="main__cancion    __subtitulo2">Disponible en todas las plataformas</h3>
-                <a href="https://open.spotify.com/track/4LRPiXqCikLlN15c3yImP7?si=6fc9b62e64e84366" target="_blank"><input type="button" class="main__botonspotify" value="As It Was en Spotify"></a>
-            </div>
-            <div class="videoprueba">
-                <iframe src="https://player.vimeo.com/video/696500497?h=9856e42242&color=ffffff&title=0&byline=0&portrait=0" width="640" height="445" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+            <div class="row justify-content-between align-items-center">
+                <div class="main__cancion__prueba col-xl-6 col-md-12 col-sm-11">
+                    <h2 class="main__cancion__titulo">As it was</h2>
+                    <h3 class="main__cancion__subtitulo">Nuevo single de su proximo disco</h3>
+                    <h3 class="main__cancion    __subtitulo2">Disponible en todas las plataformas</h3>
+                    <a href="https://open.spotify.com/track/4LRPiXqCikLlN15c3yImP7?si=6fc9b62e64e84366" target="_blank"><input type="button" class="main__botonspotify" value="As It Was en Spotify"></a>
+                </div>
+                <div class="videoprueba col-xl-6 col-md-12 col-sm-5">
+                    <iframe src="https://player.vimeo.com/video/696500497?h=9856e42242&color=ffffff&title=0&byline=0&portrait=0" width="640" height="445" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                </div>
             </div>
         </section>
     </main>
@@ -66,5 +87,6 @@
             </ul>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
