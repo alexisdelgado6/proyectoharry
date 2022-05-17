@@ -22,8 +22,8 @@ header {
 
 nav ul {
     display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: center;
     list-style-type: none;
     text-decoration: none;
 }
@@ -33,6 +33,9 @@ nav ul li {
 }
 
 nav ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
     font-family: 'Barlow', sans-serif;
     font-family: 'Montserrat', sans-serif;
@@ -42,6 +45,10 @@ nav ul li a {
     font-size: 1.20rem;
 }
 
+nav ul li a:hover {
+    color: #4F1A0C;
+}
+
 .header__logo__imagen {
     width: 18.75rem;
     margin: 10px;
@@ -49,29 +56,7 @@ nav ul li a {
 
 /* TERMINA EL HEADER */
 
-.main__biografia {
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    grid-template-areas:
-    "imagen texto1";
-    gap: 10px;
-}
-
-.main__cancion {
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    grid-template-areas:
-    "texto2 video";
-}
-
 /* EMPIEZA MAIN BIOGRAFIA */
-
-.main__biografia__imagenn{
-    grid-area: imagen;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 .main__biografia__texto{
     grid-area: texto1;
@@ -79,13 +64,11 @@ nav ul li a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 2.5rem;
+    /* margin: 2.5rem; */
 }
 
 .main__biografia__imagen {
     display: flex;
-    /* align-items: center;
-    justify-content: center; */
     width: 40rem;
     margin: 40px;
 }
@@ -107,10 +90,10 @@ h1 {
 /* EMPIEZA MAIN CANCION */
 
 .videoprueba {
-    grid-area: video;
-    display: flex;
-    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
+
 
 .main__cancion {
     display: flex;
@@ -119,7 +102,6 @@ h1 {
 }
 
 .main__cancion__prueba {
-    grid-area: texto2;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -175,26 +157,26 @@ footer {
     display: flex ;
     justify-content: space-between;
     align-items: center;
-    grid-area: footer;
     font-family: 'Barlow', sans-serif;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Source Sans Pro', sans-serif;
     color: white;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     background-color: #cf4520;
     /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='88' height='24' viewBox='0 0 88 24'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='autumn' fill='%23db856e' fill-opacity='0.4'%3E%3Cpath d='M10 0l30 15 2 1V2.18A10 10 0 0 0 41.76 0H39.7a8 8 0 0 1 .3 2.18v10.58L14.47 0H10zm31.76 24a10 10 0 0 0-5.29-6.76L4 1 2 0v13.82a10 10 0 0 0 5.53 8.94L10 24h4.47l-6.05-3.02A8 8 0 0 1 4 13.82V3.24l31.58 15.78A8 8 0 0 1 39.7 24h2.06zM78 24l2.47-1.24A10 10 0 0 0 86 13.82V0l-2 1-32.47 16.24A10 10 0 0 0 46.24 24h2.06a8 8 0 0 1 4.12-4.98L84 3.24v10.58a8 8 0 0 1-4.42 7.16L73.53 24H78zm0-24L48 15l-2 1V2.18A10 10 0 0 1 46.24 0h2.06a8 8 0 0 0-.3 2.18v10.58L73.53 0H78z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); */
 }
 
 .footer__redes {
-    grid-area: footer2;
-    margin: 15px;
-    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 footer div ul {
     list-style-type: none;
     display: flex;
-    margin-top: 10px;
+    margin-top: 5px;
     margin-bottom: 5px;
 }
 
@@ -204,17 +186,27 @@ footer div ul li {
 
 footer div ul li a img {
     display: flex;
-    width: 2rem;
+    width: 1.5rem;
 }
 
 .footer__derechos {
-    grid-area: footer1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 10px;
-    margin-left: 20px  ;
+    margin-left: 20px ;
+    font-size: 1rem;
 }
 
 .footer__derechos h3 {
     margin: 5px;
+    font-size: 1.1rem;
+}
+.footer__redes h3 {
+    font-size: 1.2rem;
+    font-weight: bolder;
+    margin-top: 2px;
+    margin-bottom: 0;
 }
 
 /* TERMINA FOOTER */
@@ -292,7 +284,6 @@ footer div ul li a img {
     display: flex;
     width: 100%;
     height: 50rem;
-    /* margin-top: 10px; */
 }
 
 .main__botonentradas {
@@ -409,56 +400,21 @@ option {
 
 /* EMPIEZA MERCH */
 
-.grid2 {
-    display: grid;
-    grid-template-columns: 4fr;
-    grid-template-areas: 
-    "header"
-    "titulo"
-    "tienda"
-    "footer";
+.producto__titulo {
+    font-weight: bolder;
+    margin-top: 5px;
 }
 
-.tienda2 {
-    grid-area: tienda;
+.producto:hover{
+    transform: scale(1.10);
 }
-
-
-.tienda {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-    "titulo titulo titulo titulo"
-    "producto1 producto2 producto3 producto4"
-    "producto5 producto6 producto7 producto8"
-}
-
-.producto1 {
-    grid-area: producto1;
-}
-
-.producto2 {
-    grid-area: producto2;
-}
-
-.producto3 {
-    grid-area: producto3;
-}
-
-.producto4 {
-    grid-area: producto4;
-}
-
-.producto5 {
-    grid-area: producto5;
-}
-
-.producto6 {
-    grid-area: producto6;
+.producto {
+    transition: all .5s ease;
 }
 
 .merchtitulo {
-    grid-area: titulo;
+    display: flex;
+    justify-content: center;
     font-size: 3rem;
     font-weight: bolder;
     margin: 10px;
@@ -502,60 +458,31 @@ option {
     nav ul li a {
         font-size: 0.9rem;
     }
-    
-    .main__biografia{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 5px;
-    }
-    .main__biografia {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-        "imagen"
-        "texto1";
-        /* gap: 10px; */
-    }
-    .main__biografia__imagen {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 18rem;
-        margin: 1.8rem;
-    }
 
     .main__biografia__texto{
-        grid-area: texto1;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin: 20px;
+        margin: 0px;
         margin-top: 0px;
     }
 
     .main__biografia__p {
-        font-size: 1.25rem;
+        font-size: 1rem;
         line-height: 1.3;
-        margin: 10px;
+        margin: 5px;
     }
 
     .main__cancion {
         display: flex;
         justify-content: center;
         align-items: center;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-        "texto2"
-        "video";
     }
 
     .videoprueba iframe {
-        width: 20rem;
-        height: 15rem;
+        width: 25rem;
+        height: 11rem;
         margin: 5px;
     }
 
@@ -580,21 +507,6 @@ option {
     }
 
     /* TERMINA DISCOGRAFIA */
-
-    .tienda {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-        "titulo"
-        "producto1"
-        "producto2" 
-        "producto3"
-        "producto4"
-        "producto5"
-        "producto6"
-        "producto7" 
-        "producto8"
-    }
 
     .main__contacto {
         display: flex;
@@ -622,55 +534,13 @@ option {
         width: 100%;
         background-color: #cf4520;
     }
-    .main__biografia{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 5px;
-    }
-    .main__biografia {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-        "imagen"
-        "texto1";
-        /* gap: 10px; */
-    }
-    .main__biografia__imagen {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 18rem;
-        margin: 1.8rem;
-    }
-
-    .main__biografia__texto{
-        grid-area: texto1;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: 20px;
-        margin-top: 0px;
-    }
 
     .main__biografia__p {
         font-size: 1.25rem;
         line-height: 1.3;
-        margin: 10px;
+        /* margin: 10px; */
     }
 
-    .main__cancion {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-        "texto2"
-        "video";
-    }
     .videoprueba iframe {
         width: 20rem;
         height: 15rem;
@@ -691,17 +561,6 @@ option {
         width: 30rem;
     }
 
-    .tienda {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-        "titulo titulo"
-        "producto1 producto2" 
-        "producto3 producto4"
-        "producto5 producto6"
-        "producto7 producto8"
-    }
-
     .main__contacto {
         display: flex;
         flex-direction: column;
@@ -710,5 +569,4 @@ option {
     .main__tourimagen {
         height: 25rem;
     }
-
 }
