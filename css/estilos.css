@@ -29,7 +29,8 @@ nav ul {
 }
 
 nav ul li {
-    padding: 20px;
+    padding: 1.25rem;
+    margin-top: 0.5rem;
 }
 
 nav ul li a {
@@ -43,15 +44,21 @@ nav ul li a {
     color: #ffffff;
     font-weight: bold;
     font-size: 1.20rem;
+    background-image: linear-gradient(#ffffff, #ffffff);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .5s;
 }
 
 nav ul li a:hover {
-    color: #4F1A0C;
+    color: #ffffff;
+    background-size: 100% 2px;
 }
 
 .header__logo__imagen {
     width: 18.75rem;
-    margin: 10px;
+    margin: 0.625rem;
 }
 
 /* TERMINA EL HEADER */
@@ -59,25 +66,17 @@ nav ul li a:hover {
 /* EMPIEZA MAIN BIOGRAFIA */
 
 .main__biografia__texto{
-    grid-area: texto1;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* margin: 2.5rem; */
-}
-
-.main__biografia__imagen {
-    display: flex;
-    width: 40rem;
-    margin: 40px;
 }
 
 h1 {
     display: flex;
     font-size: 3.438rem;
     font-weight: bolder;
-    margin: 10px;
+    margin: 0.652rem;
 }
 
 .main__biografia__p {
@@ -89,19 +88,19 @@ h1 {
 
 /* EMPIEZA MAIN CANCION */
 
-.videoprueba {
-    margin-top: 10px;
-    margin-bottom: 10px;
+.main__video {
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
 
+.main__video iframe {
+    width: 35rem;
+    height: 20rem;
+    margin-bottom: 1.25rem;
+}
 
 .main__cancion {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 20px;
-}
-
-.main__cancion__prueba {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -144,7 +143,7 @@ h1 {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.25rem;
     font-weight: bolder;
-    margin: 10px;
+    margin: 0.625rem;
 }
 .main__botonspotify:hover {
     background: #fff;
@@ -163,7 +162,6 @@ footer {
     color: white;
     font-size: 0.7rem;
     background-color: #cf4520;
-    /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='88' height='24' viewBox='0 0 88 24'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='autumn' fill='%23db856e' fill-opacity='0.4'%3E%3Cpath d='M10 0l30 15 2 1V2.18A10 10 0 0 0 41.76 0H39.7a8 8 0 0 1 .3 2.18v10.58L14.47 0H10zm31.76 24a10 10 0 0 0-5.29-6.76L4 1 2 0v13.82a10 10 0 0 0 5.53 8.94L10 24h4.47l-6.05-3.02A8 8 0 0 1 4 13.82V3.24l31.58 15.78A8 8 0 0 1 39.7 24h2.06zM78 24l2.47-1.24A10 10 0 0 0 86 13.82V0l-2 1-32.47 16.24A10 10 0 0 0 46.24 24h2.06a8 8 0 0 1 4.12-4.98L84 3.24v10.58a8 8 0 0 1-4.42 7.16L73.53 24H78zm0-24L48 15l-2 1V2.18A10 10 0 0 1 46.24 0h2.06a8 8 0 0 0-.3 2.18v10.58L73.53 0H78z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); */
 }
 
 .footer__redes {
@@ -176,12 +174,12 @@ footer {
 footer div ul {
     list-style-type: none;
     display: flex;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 0.313rem;
+    margin-bottom: 0.313rem;
 }
 
 footer div ul li {
-    padding: 10px;
+    padding: 0.625rem;
 }
 
 footer div ul li a img {
@@ -193,19 +191,19 @@ footer div ul li a img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10px;
-    margin-left: 20px ;
+    margin: 0.625px;
+    margin-left: 1.25rem ;
     font-size: 1rem;
 }
 
 .footer__derechos h3 {
-    margin: 5px;
-    font-size: 1.1rem;
+    margin: 0.313rem;
+    font-size: 1rem;
 }
 .footer__redes h3 {
     font-size: 1.2rem;
     font-weight: bolder;
-    margin-top: 2px;
+    margin-top: 0.125rem;
     margin-bottom: 0;
 }
 
@@ -218,9 +216,9 @@ footer div ul li a img {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 50px;
+    font-size: 3.125rem;
     font-weight: bolder;
-    margin: 10px;
+    margin: 0.625rem;
 }
 
 .main__discos__hs {
@@ -228,7 +226,7 @@ footer div ul li a img {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    margin: 20px;
+    margin: 1.25rem;
     width: 37rem;
 
 }
@@ -238,7 +236,7 @@ footer div ul li a img {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    margin: 20px;
+    margin: 1.25rem;
     width: 37rem;
 }
 
@@ -249,8 +247,8 @@ footer div ul li a img {
 }
 
 .main__ambosdiscos h3 {
-    font-size: 30px;
-    margin-bottom: 20px;
+    font-size: 1.875rem;
+    margin-bottom: 1.25rem;
 }
 
 /* TERMINA DISCOGRAFIA */
@@ -262,7 +260,7 @@ footer div ul li a img {
     flex-direction: column;
     justify-content: center;
     list-style: none;
-    margin: 20px;
+    margin: 1.25rem;
 }
 
 .main__fechas li {
@@ -271,13 +269,13 @@ footer div ul li a img {
     justify-content: space-between;
     border: 2px solid #cf4520;
     border-radius: 15px;
-    padding: 10px;
+    padding: 0.625rem;
     font-weight: bolder;
-    margin: 5px;
+    margin: 0.375rem;
 }
 
 .main__fechas li input {
-    margin-right: 40px;
+    margin-right: 2.5rem;
 }
 
 .main__tourimagen {
@@ -287,21 +285,21 @@ footer div ul li a img {
 }
 
 .main__botonentradas {
-    min-width: 130px;
-    height: 40px;
+    min-width: 8.125rem;
+    height: 2.5rem;
     color: #fff;
-    padding: 5px 10px;
+    padding: 0.313rem 0.625rem;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
     position: relative;
     display: inline-block;
     outline: none;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     border: 2px solid #cf4520;
     background: #cf4520;
-    margin-left: 10px;
-    margin: 10px;
+    margin-left: 0.625rem;
+    margin: 0.625rem;
 }
 .main__botonentradas:hover {
     background: #fff;
@@ -328,13 +326,13 @@ footer div ul li a img {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    margin: 30px;
+    margin: 1.875rem;
 }
 
 .main__contacto__formulario__opciones {
     display: flex;
     flex-direction: column;
-    margin: 10px;
+    margin: 0.625rem;
 }
 .main__contacto__formulario__opciones p {
     display: flex;
@@ -345,13 +343,13 @@ footer div ul li a img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 0.625rem;
 }
 
 .main__contacto__textarea label {
-    margin: 10px;
+    margin: 0.625rem;
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 textarea {
@@ -364,7 +362,7 @@ textarea {
     font-size: 18px;
     padding: 8px;
     border: #cf4520 solid 2px;
-    border-radius: 20px;
+    border-radius: 1.25rem;
 }
 
 .botonenviar {
@@ -374,17 +372,17 @@ textarea {
 
 .cuadro {
     border: 4px solid #cf4520;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 20px;
+    margin: 1.25rem;
+    padding: 1.25rem;
+    border-radius: 1.25rem;
 }
 
 input  {
     border: 2px solid #cf4520;
     padding: 8px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 20px;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    border-radius: 1.25rem;
     font-family: 'Barlow', sans-serif;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Source Sans Pro', sans-serif;
@@ -402,7 +400,7 @@ option {
 
 .producto__titulo {
     font-weight: bolder;
-    margin-top: 5px;
+    margin-top: 0.313rem;
 }
 
 .producto:hover{
@@ -417,7 +415,7 @@ option {
     justify-content: center;
     font-size: 3rem;
     font-weight: bolder;
-    margin: 10px;
+    margin: 0.625rem;
 }
 
 
@@ -427,8 +425,8 @@ option {
     align-items: center;
     justify-content: center;
     border: 2px solid #cf4520;
-    margin: 10px;
-    border-radius: 10px;
+    margin: 0.625rem;
+    border-radius: 0.625rem;
 }
 
 .tienda__producto__imagen{ 
@@ -452,42 +450,41 @@ option {
         background-color: #cf4520;
     }
     nav ul li {
-        padding: 8px;
+        padding: 0.5rem;
     }
 
     nav ul li a {
         font-size: 0.9rem;
     }
 
-    .main__biografia__texto{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: 0px;
-        margin-top: 0px;
+    .footer__derechos h3 {
+        font-size: 0.6rem;
+    }
+    .footer__redes h3 {
+        font-size: 1rem;
+        font-weight: bolder;
+        margin-top: 2px;
+        margin-bottom: 0;
+    }
+    
+
+
+    .carousel {
+        margin-top: 1rem;
     }
 
     .main__biografia__p {
         font-size: 1rem;
         line-height: 1.3;
-        margin: 5px;
+        margin: 0.416rem;
     }
 
-    .main__cancion {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .videoprueba iframe {
-        width: 25rem;
-        height: 11rem;
-        margin: 5px;
+    .main__video iframe {
+        width: 100%;
     }
 
     footer div ul li {
-        padding: 5px;
+        padding: 0.4rem;
     }
 
     /* TERMINA INDEX */
@@ -522,6 +519,20 @@ option {
     .main__tourimagen {
         height: 20rem;
     }
+
+    .main__fechas li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .main__fechas li input {
+        margin-right: 0;
+    }
+    
 }
 
 @media (min-width: 541px) and (max-width: 720px) {
@@ -534,17 +545,27 @@ option {
         width: 100%;
         background-color: #cf4520;
     }
+    nav ul li {
+        padding: 0.5rem;
+    }
+
+    nav ul li a {
+        font-size: 0.9rem;
+    }
+
+    .carousel {
+        margin-top: 1rem;
+    }
+
 
     .main__biografia__p {
         font-size: 1.25rem;
         line-height: 1.3;
-        /* margin: 10px; */
+        margin: 0.83rem;
     }
 
-    .videoprueba iframe {
-        width: 20rem;
-        height: 15rem;
-        margin: 5px;
+    .main__video iframe {
+        width: 40rem;
     }
 
     .main__ambosdiscos {
@@ -568,5 +589,30 @@ option {
     }
     .main__tourimagen {
         height: 25rem;
+    }
+}
+
+@media (min-width: 721px) and (max-width: 899px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        grid-area: header;
+        width: 100%;
+        background-color: #cf4520;
+    }
+    nav ul li {
+        padding: 0.5rem;
+    }
+
+    nav ul li a {
+        font-size: 0.9rem;
+    }
+
+    .main__tourimagen {
+        display: flex;
+        width: 100%;
+        height: 30rem;
     }
 }
