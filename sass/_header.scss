@@ -1,0 +1,45 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    grid-area: header;
+    width: 100%;
+    background-color: $color-principal;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    text-decoration: none;
+    li {
+        padding: 1.25rem;
+        margin-top: 0.5rem;
+    }
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-family: 'Barlow', sans-serif;
+            font-family: 'Montserrat', sans-serif;
+            font-family: 'Source Sans Pro', sans-serif;
+            color: $color-secundario;
+            font-weight: bold;
+            font-size: 1.20rem;
+            background-image: linear-gradient(#ffffff, #ffffff);
+            background-position: 0% 100%;
+            background-repeat: no-repeat;
+            background-size: 0% 2px;
+            transition: background-size .5s;
+            &:hover {
+                color: $color-secundario;
+                background-size: 100% 2px;
+            }
+        }
+}
+
+.header__logo__imagen {
+    width: 18.75rem;
+    margin: 0.625rem;
+}

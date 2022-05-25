@@ -1,39 +1,20 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: 'Barlow', sans-serif;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Source Sans Pro', sans-serif;
-    color: #cf4520;
-}
-
-/* EMPIEZA EL HEADER */
-
 header {
-    display: flex;
-    justify-content: space-between;
-    grid-area: header;
-    width: 100%;
-    background-color: #cf4520;
-}
+  display: flex;
+  justify-content: space-between;
+  grid-area: header;
+  width: 100%;
+  background-color: #cf4520; }
 
 nav ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    list-style-type: none;
-    text-decoration: none;
-}
-
-nav ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  text-decoration: none; }
+  nav ul li {
     padding: 1.25rem;
-    margin-top: 0.5rem;
-}
-
-nav ul li a {
+    margin-top: 0.5rem; }
+  nav ul a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,222 +29,295 @@ nav ul li a {
     background-position: 0% 100%;
     background-repeat: no-repeat;
     background-size: 0% 2px;
-    transition: background-size .5s;
-}
-
-nav ul li a:hover {
-    color: #ffffff;
-    background-size: 100% 2px;
-}
+    transition: background-size .5s; }
+    nav ul a:hover {
+      color: #ffffff;
+      background-size: 100% 2px; }
 
 .header__logo__imagen {
-    width: 18.75rem;
-    margin: 0.625rem;
-}
-
-/* TERMINA EL HEADER */
-
-/* EMPIEZA MAIN BIOGRAFIA */
-
-.main__biografia__texto{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-h1 {
-    display: flex;
-    font-size: 3.438rem;
-    font-weight: bolder;
-    margin: 0.652rem;
-}
-
-.main__biografia__p {
-    font-size: 1.25rem;
-    line-height: 1.3;
-}
-
-/* TERMINA MAIN BIOGRAFIA */
-
-/* EMPIEZA MAIN CANCION */
-
-.main__video {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-}
-
-.main__video iframe {
-    width: 35rem;
-    height: 20rem;
-    margin-bottom: 1.25rem;
-}
-
-.main__cancion {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.main__cancion__titulo {
-    display: flex;
-    font-size: 2.8rem;
-    font-weight: bolder;
-
-}
-.main__cancion__subtitulo {
-    font-size: 1.5rem;
-    margin: 5px;
-}
-
-.main__cancion__subtitulo2 {
-    font-size: 1.3rem;
-    margin: 10px;
-}
-
-.main__botonspotify {
-    min-width: 130px;
-    height: 3.125rem;
-    color: #fff;
-    padding: 0.6rem 2.5rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-    outline: none;
-    border-radius: 20px;
-    border: 2px solid #cf4520;
-    background: #cf4520;
-    margin-left: 10px;
-    font-family: 'Barlow', sans-serif;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1.25rem;
-    font-weight: bolder;
-    margin: 0.625rem;
-}
-.main__botonspotify:hover {
-    background: #fff;
-    color: #cf4520
-}
-
-/* EMPIEZA EL FOOTER */
+  width: 18.75rem;
+  margin: 0.625rem; }
 
 footer {
-    display: flex ;
-    justify-content: space-between;
-    align-items: center;
-    font-family: 'Barlow', sans-serif;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Source Sans Pro', sans-serif;
-    color: white;
-    font-size: 0.7rem;
-    background-color: #cf4520;
-}
-
-.footer__redes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-footer div ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Barlow', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #ffffff;
+  font-size: 0.7rem;
+  background-color: #cf4520; }
+  footer div ul {
     list-style-type: none;
     display: flex;
     margin-top: 0.313rem;
-    margin-bottom: 0.313rem;
-}
-
-footer div ul li {
-    padding: 0.625rem;
-}
-
-footer div ul li a img {
+    margin-bottom: 0.313rem; }
+  footer li {
+    padding: 0.625rem; }
+  footer a img {
     display: flex;
-    width: 1.5rem;
-}
+    width: 1.5rem; }
 
-.footer__derechos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0.625px;
-    margin-left: 1.25rem ;
-    font-size: 1rem;
-}
-
-.footer__derechos h3 {
-    margin: 0.313rem;
-    font-size: 1rem;
-}
-.footer__redes h3 {
+.footer__redes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .footer__redes h3 {
     font-size: 1.2rem;
     font-weight: bolder;
     margin-top: 0.125rem;
-    margin-bottom: 0;
-}
+    margin-bottom: 0; }
 
-/* TERMINA FOOTER */
+.footer__derechos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.625px;
+  margin-left: 1.25rem;
+  font-size: 1rem; }
+  .footer__derechos h3 {
+    margin: 0.313rem;
+    font-size: 1rem; }
+
+@media (min-width: 320px) and (max-width: 540px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: header;
+    width: 100%;
+    background-color: #cf4520; }
+  nav ul li {
+    padding: 0.5rem; }
+    nav ul li a {
+      font-size: 0.9rem; }
+  .footer__derechos h3 {
+    font-size: 0.6rem; }
+  .footer__redes h3 {
+    font-size: 1rem;
+    font-weight: bolder;
+    margin-top: 2px;
+    margin-bottom: 0; }
+  .carousel {
+    margin-top: 1rem; }
+  .main__biografia__p {
+    font-size: 1rem;
+    line-height: 1.3;
+    margin: 0.416rem; }
+  .main__video iframe {
+    width: 100%; }
+  footer div ul li {
+    padding: 0.4rem; }
+  /* TERMINA INDEX */
+  .main__ambosdiscos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; }
+  .main__discos__hs iframe {
+    width: 20rem; }
+  .main__discos__fineline iframe {
+    width: 20rem; }
+  /* TERMINA DISCOGRAFIA */
+  .main__contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .cuadro {
+    border: 0px; }
+  .main__tourimagen {
+    height: 20rem; }
+  .main__fechas li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    text-align: center; }
+    .main__fechas li input {
+      margin-right: 0; } }
+
+@media (min-width: 541px) and (max-width: 720px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: header;
+    width: 100%;
+    background-color: #cf4520; }
+  nav ul li {
+    padding: 0.5rem; }
+    nav ul li a {
+      font-size: 0.9rem; }
+  .carousel {
+    margin-top: 1rem; }
+  .main__biografia__p {
+    font-size: 1.25rem;
+    line-height: 1.3;
+    margin: 0.83rem; }
+  .main__video iframe {
+    width: 40rem; }
+  .main__ambosdiscos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; }
+  .main__discos__hs {
+    width: 30rem; }
+  .main__discos__fineline {
+    width: 30rem; }
+  .main__contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .main__tourimagen {
+    height: 25rem; } }
+
+@media (min-width: 721px) and (max-width: 899px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: header;
+    width: 100%;
+    background-color: #cf4520; }
+  nav ul li {
+    padding: 0.5rem; }
+    nav ul li a {
+      font-size: 0.9rem; }
+  .main__tourimagen {
+    display: flex;
+    width: 100%;
+    height: 30rem; } }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Barlow', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #cf4520; }
+
+/* EMPIEZA MAIN BIOGRAFIA */
+h1 {
+  display: flex;
+  font-size: 3.438rem;
+  font-weight: bolder;
+  margin: 0.652rem; }
+
+.main__biografia__texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.main__biografia__p {
+  font-size: 1.25rem;
+  line-height: 1.3; }
+
+/* TERMINA MAIN BIOGRAFIA */
+/* EMPIEZA MAIN CANCION */
+.main__video {
+  display: flex;
+  align-content: center;
+  justify-content: center; }
+  .main__video iframe {
+    width: 35rem;
+    height: 20rem;
+    margin-bottom: 1.25rem; }
+
+.main__cancion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .main__cancion__titulo {
+    display: flex;
+    font-size: 2.8rem;
+    font-weight: bolder; }
+  .main__cancion__subtitulo {
+    font-size: 1.5rem;
+    margin: 5px;
+    font-weight: bolder; }
+  .main__cancion__subtitulo2 {
+    font-size: 1.3rem;
+    margin: 10px;
+    font-weight: bold; }
+
+.main__botonspotify {
+  min-width: 130px;
+  height: 3.125rem;
+  color: #ffffff;
+  padding: 0.6rem 2.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 20px;
+  border: 2px solid #cf4520;
+  background: #cf4520;
+  margin-left: 10px;
+  font-family: 'Barlow', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.25rem;
+  font-weight: bolder;
+  margin: 0.625rem; }
+  .main__botonspotify:hover {
+    background: #fff;
+    color: #cf4520; }
 
 /* EMPIEZA DISCOGRAFIA */
-
-
 .main__discos__titulo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 3.125rem;
-    font-weight: bolder;
-    margin: 0.625rem;
-}
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.125rem;
+  font-weight: bolder;
+  margin: 0.625rem; }
 
 .main__discos__hs {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    margin: 1.25rem;
-    width: 37rem;
-
-}
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 1.25rem;
+  width: 37rem; }
 
 .main__discos__fineline {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    margin: 1.25rem;
-    width: 37rem;
-}
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 1.25rem;
+  width: 37rem; }
 
 .main__ambosdiscos {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.main__ambosdiscos h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+  .main__ambosdiscos h3 {
     font-size: 1.875rem;
-    margin-bottom: 1.25rem;
-}
+    margin-bottom: 1.25rem; }
 
 /* TERMINA DISCOGRAFIA */
-
 /* EMPIEZA LOVE ON TOUR */
-
 .main__fechas {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    list-style: none;
-    margin: 1.25rem;
-}
-
-.main__fechas li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+  margin: 1.25rem; }
+  .main__fechas li {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -271,348 +325,128 @@ footer div ul li a img {
     border-radius: 15px;
     padding: 0.625rem;
     font-weight: bolder;
-    margin: 0.375rem;
-}
-
-.main__fechas li input {
-    margin-right: 2.5rem;
-}
+    margin: 0.375rem; }
+    .main__fechas li input {
+      margin-right: 2.5rem; }
 
 .main__tourimagen {
-    display: flex;
-    width: 100%;
-    height: 50rem;
-}
+  display: flex;
+  width: 100%;
+  height: 50rem; }
 
 .main__botonentradas {
-    min-width: 8.125rem;
-    height: 2.5rem;
-    color: #fff;
-    padding: 0.313rem 0.625rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-    outline: none;
-    border-radius: 1.25rem;
-    border: 2px solid #cf4520;
-    background: #cf4520;
-    margin-left: 0.625rem;
-    margin: 0.625rem;
-}
-.main__botonentradas:hover {
+  min-width: 8.125rem;
+  height: 2.5rem;
+  color: #ffffff;
+  padding: 0.313rem 0.625rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 1.25rem;
+  border: 2px solid #cf4520;
+  background: #cf4520;
+  margin-left: 0.625rem;
+  margin: 0.625rem; }
+  .main__botonentradas:hover {
     background: #fff;
-    color: #cf4520
-}
+    color: #cf4520; }
 
 /* TERMINA LOVE ON TOUR */
-
 /* EMPIEZA CONTACTO */
-
 .contacto__texto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .main__contacto {
-    display: flex;
-    justify-content: center;
-}
-
-.main__contacto__formulario {
+  display: flex;
+  justify-content: center; }
+  .main__contacto__formulario {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    margin: 1.875rem;
-}
-
-.main__contacto__formulario__opciones {
-    display: flex;
-    flex-direction: column;
-    margin: 0.625rem;
-}
-.main__contacto__formulario__opciones p {
-    display: flex;
-    justify-content: center;
-}
+    margin: 1.875rem; }
+    .main__contacto__formulario__opciones {
+      display: flex;
+      flex-direction: column;
+      margin: 0.625rem; }
+      .main__contacto__formulario__opciones p {
+        display: flex;
+        justify-content: center; }
 
 .main__contacto__textarea {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 0.625rem;
-}
-
-.main__contacto__textarea label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0.625rem; }
+  .main__contacto__textarea label {
     margin: 0.625rem;
     font-weight: bolder;
-    font-size: 1.25rem;
-}
+    font-size: 1.25rem; }
 
 textarea {
-    resize: none;
-    font-family: 'Barlow', sans-serif;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Source Sans Pro', sans-serif;
-    color: #cf4520;
-    font-weight: bolder;
-    font-size: 18px;
-    padding: 8px;
-    border: #cf4520 solid 2px;
-    border-radius: 1.25rem;
-}
+  resize: none;
+  font-family: 'Barlow', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #cf4520;
+  font-weight: bolder;
+  font-size: 18px;
+  padding: 8px;
+  border: #cf4520 solid 2px;
+  border-radius: 1.25rem; }
 
 .botonenviar {
-    display: flex;
-    justify-content: center;
-}
+  display: flex;
+  justify-content: center; }
 
 .cuadro {
-    border: 4px solid #cf4520;
-    margin: 1.25rem;
-    padding: 1.25rem;
-    border-radius: 1.25rem;
-}
+  border: 4px solid #cf4520;
+  margin: 1.25rem;
+  padding: 1.25rem;
+  border-radius: 1.25rem; }
 
-input  {
-    border: 2px solid #cf4520;
-    padding: 8px;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-    border-radius: 1.25rem;
-    font-family: 'Barlow', sans-serif;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Source Sans Pro', sans-serif;
-    color: #cf4520;
-    font-weight: bolder;
-}
+input {
+  border: 2px solid #cf4520;
+  padding: 8px;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  border-radius: 1.25rem;
+  font-family: 'Barlow', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #cf4520;
+  font-weight: bolder; }
 
 option {
-    border: #cf4520 ;
-}
+  border: #cf4520; }
 
 /* TERMINA CONTACTO */
-
 /* EMPIEZA MERCH */
-
-.producto__titulo {
-    font-weight: bolder;
-    margin-top: 0.313rem;
-}
-
-.producto:hover{
-    transform: scale(1.10);
-}
 .producto {
-    transition: all .5s ease;
-}
+  transition: all .5s ease; }
+  .producto:hover {
+    transform: scale(1.1); }
+  .producto__titulo {
+    font-weight: bolder;
+    margin-top: 0.313rem; }
 
 .merchtitulo {
-    display: flex;
-    justify-content: center;
-    font-size: 3rem;
-    font-weight: bolder;
-    margin: 0.625rem;
-}
-
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: bolder;
+  margin: 0.625rem; }
 
 .tienda__producto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid #cf4520;
-    margin: 0.625rem;
-    border-radius: 0.625rem;
-}
-
-.tienda__producto__imagen{ 
-    display: flex;
-    width: 20rem;
-}
-
-.tienda__producto h3 {
-    font-size: 1.8rem;
-}
-
-
-@media (min-width: 320px) and (max-width: 540px){
-    header {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        grid-area: header;
-        width: 100%;
-        background-color: #cf4520;
-    }
-    nav ul li {
-        padding: 0.5rem;
-    }
-
-    nav ul li a {
-        font-size: 0.9rem;
-    }
-
-    .footer__derechos h3 {
-        font-size: 0.6rem;
-    }
-    .footer__redes h3 {
-        font-size: 1rem;
-        font-weight: bolder;
-        margin-top: 2px;
-        margin-bottom: 0;
-    }
-    
-
-
-    .carousel {
-        margin-top: 1rem;
-    }
-
-    .main__biografia__p {
-        font-size: 1rem;
-        line-height: 1.3;
-        margin: 0.416rem;
-    }
-
-    .main__video iframe {
-        width: 100%;
-    }
-
-    footer div ul li {
-        padding: 0.4rem;
-    }
-
-    /* TERMINA INDEX */
-
-    .main__ambosdiscos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-    }
-    .main__discos__hs {
-        width: 20rem;
-    }
-    
-    .main__discos__fineline {
-        width: 20rem;
-    }
-
-    /* TERMINA DISCOGRAFIA */
-
-    .main__contacto {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .cuadro {
-        border: 0px
-
-    }
-
-    .main__tourimagen {
-        height: 20rem;
-    }
-
-    .main__fechas li {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        font-size: 1rem;
-        text-align: center;
-    }
-
-    .main__fechas li input {
-        margin-right: 0;
-    }
-    
-}
-
-@media (min-width: 541px) and (max-width: 720px) {
-    header {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        grid-area: header;
-        width: 100%;
-        background-color: #cf4520;
-    }
-    nav ul li {
-        padding: 0.5rem;
-    }
-
-    nav ul li a {
-        font-size: 0.9rem;
-    }
-
-    .carousel {
-        margin-top: 1rem;
-    }
-
-
-    .main__biografia__p {
-        font-size: 1.25rem;
-        line-height: 1.3;
-        margin: 0.83rem;
-    }
-
-    .main__video iframe {
-        width: 40rem;
-    }
-
-    .main__ambosdiscos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-    }
-    .main__discos__hs {
-        width: 30rem;
-    }
-    
-    .main__discos__fineline {
-        width: 30rem;
-    }
-
-    .main__contacto {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .main__tourimagen {
-        height: 25rem;
-    }
-}
-
-@media (min-width: 721px) and (max-width: 899px) {
-    header {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        grid-area: header;
-        width: 100%;
-        background-color: #cf4520;
-    }
-    nav ul li {
-        padding: 0.5rem;
-    }
-
-    nav ul li a {
-        font-size: 0.9rem;
-    }
-
-    .main__tourimagen {
-        display: flex;
-        width: 100%;
-        height: 30rem;
-    }
-}
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #cf4520;
+  margin: 0.625rem;
+  border-radius: 0.625rem; }
