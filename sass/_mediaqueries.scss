@@ -19,7 +19,7 @@
     .footer {
         &__derechos {
             h3{
-                font-size: 0.6rem;
+                font-size: 1rem;
             }
         }
         &__redes {
@@ -57,10 +57,14 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
+        &__p {
+            width: 300px;
+        }
     }
 
     .main__discos {
         &__hs {
+            width: 20rem;
             iframe {
                 width: 20rem;
             }
@@ -85,7 +89,7 @@
     }
 
     .main__tourimagen {
-        height: 20rem;
+        height: 20rem !important;
     }
 
     .main__fechas li {
@@ -137,14 +141,18 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
+        &__p {
+            width: 450px;
+        }
     }
 
     .main__discos {
+        margin-left: 10px;
         &__hs {
-            width: 30rem;
+            width: 100%;
         }
         &__fineline {
-            width: 30rem;
+            width: 25rem;
         }
     }
 
@@ -154,7 +162,7 @@
         justify-content: center;
     }
     .main__tourimagen {
-        height: 25rem;
+        height: 25rem !important;
     }
 }
 

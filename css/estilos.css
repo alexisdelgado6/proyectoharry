@@ -95,7 +95,7 @@ footer {
     nav ul li a {
       font-size: 0.9rem; }
   .footer__derechos h3 {
-    font-size: 0.6rem; }
+    font-size: 1rem; }
   .footer__redes h3 {
     font-size: 1rem;
     font-weight: bolder;
@@ -117,8 +117,12 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: space-around; }
-  .main__discos__hs iframe {
+    .main__ambosdiscos__p {
+      width: 300px; }
+  .main__discos__hs {
     width: 20rem; }
+    .main__discos__hs iframe {
+      width: 20rem; }
   .main__discos__fineline iframe {
     width: 20rem; }
   /* TERMINA DISCOGRAFIA */
@@ -129,7 +133,7 @@ footer {
   .cuadro {
     border: 0px; }
   .main__tourimagen {
-    height: 20rem; }
+    height: 20rem !important; }
   .main__fechas li {
     display: flex;
     flex-direction: column;
@@ -166,16 +170,20 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: space-around; }
-  .main__discos__hs {
-    width: 30rem; }
-  .main__discos__fineline {
-    width: 30rem; }
+    .main__ambosdiscos__p {
+      width: 450px; }
+  .main__discos {
+    margin-left: 10px; }
+    .main__discos__hs {
+      width: 100%; }
+    .main__discos__fineline {
+      width: 25rem; }
   .main__contacto {
     display: flex;
     flex-direction: column;
     justify-content: center; }
   .main__tourimagen {
-    height: 25rem; } }
+    height: 25rem !important; } }
 
 @media (min-width: 721px) and (max-width: 899px) {
   header {
@@ -306,6 +314,7 @@ h1 {
 
 .main__ambosdiscos {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-around; }
   .main__ambosdiscos h3 {
