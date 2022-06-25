@@ -122,16 +122,17 @@ footer {
   .main__discos__hs {
     width: 20rem; }
     .main__discos__hs iframe {
-      width: 20rem; }
+      width: 18rem; }
   .main__discos__fineline iframe {
-    width: 20rem; }
+    width: 18rem; }
   /* TERMINA DISCOGRAFIA */
   .main__contacto {
     display: flex;
     flex-direction: column;
     justify-content: center; }
   .cuadro {
-    border: 0px; }
+    border: none;
+    width: 90%; }
   .main__tourimagen {
     height: 20rem !important; }
   .main__fechas li {
@@ -376,7 +377,7 @@ h1 {
 
 .main__contacto {
   display: flex;
-  justify-content: center; }
+  justify-content: space-evenly; }
   .main__contacto__formulario {
     display: flex;
     flex-direction: column;
@@ -395,6 +396,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   margin-top: 0.625rem; }
   .main__contacto__textarea label {
     margin: 0.625rem;

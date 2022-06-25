@@ -66,12 +66,12 @@
         &__hs {
             width: 20rem;
             iframe {
-                width: 20rem;
+                width: 18rem;
             }
         }
         &__fineline {
             iframe {
-                width: 20rem;
+                width: 18rem;
             }
         }
     }
@@ -85,7 +85,8 @@
     }
 
     .cuadro {
-        border: 0px
+        border: none;
+        width: 90%;
     }
 
     .main__tourimagen {
